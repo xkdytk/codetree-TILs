@@ -97,3 +97,5 @@ while True:
         print(time)
         break
     deploy(time)
+    
+# 중간에 못가는 부분이 생길 수 있어서 배정할때 저장한 경로 사용할 수 없음 (매번 bfs 돌려야함)
