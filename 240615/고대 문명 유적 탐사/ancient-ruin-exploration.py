@@ -51,7 +51,7 @@ def find(tmp_map):
                     
 def rotate(y, x, d):
     value = 0
-    tmp = [row[:] for row in A] # 깊은 복사는 이렇게 해야한다. A[:] 이거는 얇은 복사
+    tmp = [row[:] for row in A] # 깊은 복사는 이렇게 해야한다. 2차원 배열에서 A[:] 이거는 얇은 복사, 그러나 1차원 배열에서 A[:]는 깊은 복사
     tmp_map = [row[:] for row in A]
     for _ in range(d):
         for i in range(y-1, y+2):
